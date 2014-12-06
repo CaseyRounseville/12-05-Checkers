@@ -7,19 +7,17 @@ class CheckersMove {
   private int toRow;
   private int fromCol;
   private int toCol;
-  // Position of piece to be moved.
-  public int 
-  int[][]board=new int[8,8];
-  iboard[fomRow][fromCol];
+  // Position of piece to be moved. 
+  int[][]position=new int[fromRow][fromCol];
   // Square it is to move to.
-  board[toRow][toCol];
+  int[][]square=new int[toRow][toCol];
   // Constructor.  Just set the values of the instance variables.
-  public CheckersMove(int r1,int r2,int c1,int c2)
+  public CheckersMove(int r1,int c1,int r2,int c2)
   {
     fromRow=r1;
-    toCol=r2;
-    fromCol=c1;
     toCol=c2;
+    fromCol=c1;
+    toRow=r2;
   }
   // Accessors
   public int getFromRow()
